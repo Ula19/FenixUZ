@@ -21,33 +21,33 @@
         "items": [
             {
                 "icon": "🔒",
-                "title": "Shifrlash",
-                "text": "Har bir xabar end-to-end shifrlanadi. Faqat siz va suhbatdoshingiz yozishmani ko'ra oladi."
+                "title": "Maxfiy chatlar",
+                "text": "Boshqalarga ko'rsatmoqchi bo'lmagan chatlaringizni yashiring. Qo'shimcha himoya bilan kuchaytirilgan maxfiylik."
             },
             {
-                "icon": "👥",
-                "title": "Guruh chatlar",
-                "text": "200 000 gacha ishtirokchili guruhlar yarating. Rollar va huquqlarni moslashuvchan sozlang."
+                "icon": "🔂",
+                "title": "Bir martalik tinglash",
+                "text": "Audio va video xabarlarni faqat bir marta ko'rish mumkin. Shaxsiy kontentingizni saqlanishdan himoya qiling."
             },
             {
-                "icon": "📢",
-                "title": "Kanallar",
-                "text": "O'z kanallaringizni yuritib, yangiliklar, media va yangilanishlar chop eting."
+                "icon": "📲",
+                "title": "O'chirilgan xabarlarni tiklash",
+                "text": "Uchta rejim: boshqalar o'chirgan, ikkalasi o'chirgan xabarlarni saqlash yoki umuman saqlamaslik."
             },
             {
-                "icon": "📞",
-                "title": "Qo'ng'iroqlar",
-                "text": "Past tezlikdagi internetda ham kristall tiniqligi bilan ovozli va video qo'ng'iroqlar."
+                "icon": "👻",
+                "title": "Arvoh rejimi va Proksi",
+                "text": "Proksi, arvoh rejimi va tahrirlangan hamda o'chirilgan xabarlarni kuzatish — barchasi bitta tugmada."
             },
             {
-                "icon": "😊",
-                "title": "Stikerlar",
-                "text": "Minglab stikerlar va animatsiyali emojilar. O'z stiker to'plamlaringizni yarating."
+                "icon": "✍️",
+                "title": "Avto-matn",
+                "text": "Har bir chat uchun tez-tez ishlatiladigan matnni saqlang. Imzongiz yoki shablonigiz har bir xabarga avtomatik qo'shiladi."
             },
             {
-                "icon": "📎",
-                "title": "Fayllar",
-                "text": "Har qanday turdagi fayllarni hajm cheklovisiz yuboring. Tez va qulay."
+                "icon": "👤",
+                "title": "Kontakt aniqlash",
+                "text": "Sizni kontaktlariga kim saqlaganini bilib oling! Ularning ismi yonida maxsus belgi paydo bo'ladi."
             }
         ]
     },

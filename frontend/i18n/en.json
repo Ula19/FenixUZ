@@ -21,33 +21,33 @@
         "items": [
             {
                 "icon": "🔒",
-                "title": "Encryption",
-                "text": "End-to-end encryption for every message. Only you and your contact can read the conversation."
+                "title": "Secret Chats",
+                "text": "Hide chats you don't want others to see. Enhanced privacy with an extra layer of protection."
             },
             {
-                "icon": "👥",
-                "title": "Group Chats",
-                "text": "Create groups with up to 200,000 members with flexible role and permission settings."
+                "icon": "🔂",
+                "title": "One-Time Playback",
+                "text": "Audio and video messages can only be viewed once. Protect your personal content from being saved."
             },
             {
-                "icon": "📢",
-                "title": "Channels",
-                "text": "Run your own channels: publish news, media, and updates for your subscribers."
+                "icon": "📲",
+                "title": "Deleted Messages Recovery",
+                "text": "Three recovery modes: save messages deleted by others, by both parties, or don't save at all."
             },
             {
-                "icon": "📞",
-                "title": "Calls",
-                "text": "Crystal-clear voice and video calls, even on slow internet connections."
+                "icon": "👻",
+                "title": "Ghost Mode & Proxy",
+                "text": "Quick access to proxy, ghost mode, and tracking of edited and deleted messages — all in one button."
             },
             {
-                "icon": "😊",
-                "title": "Stickers",
-                "text": "Thousands of stickers and animated emojis. Create your own sticker packs."
+                "icon": "✍️",
+                "title": "Auto-Text",
+                "text": "Save frequently used text for each chat. Your signature or template will be added to every message automatically."
             },
             {
-                "icon": "📎",
-                "title": "Files",
-                "text": "Send files of any type with no size limits. Fast and convenient."
+                "icon": "👤",
+                "title": "Contact Detection",
+                "text": "Find out who saved you in their contacts! A special icon appears next to their name instantly."
             }
         ]
     },
