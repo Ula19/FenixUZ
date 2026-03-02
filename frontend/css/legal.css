@@ -1,0 +1,143 @@
+/* ==========================================================================
+   Legal Pages — Стили для политики конфиденциальности и соглашения
+   ========================================================================== */
+
+.legal {
+    padding-top: calc(var(--header-height) + var(--space-3xl));
+    padding-bottom: var(--space-5xl);
+    min-height: 100vh;
+}
+
+.legal__header {
+    text-align: center;
+    margin-bottom: var(--space-3xl);
+    padding-bottom: var(--space-2xl);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.legal__date {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+    margin-top: var(--space-md);
+}
+
+.legal__content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.legal__content h2 {
+    font-size: var(--font-size-xl);
+    margin-top: var(--space-2xl);
+    margin-bottom: var(--space-md);
+    color: var(--color-text-primary);
+    padding-bottom: var(--space-sm);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.legal__content h3 {
+    font-size: var(--font-size-lg);
+    margin-top: var(--space-xl);
+    margin-bottom: var(--space-sm);
+    color: var(--color-text-primary);
+}
+
+.legal__content p {
+    font-size: var(--font-size-base);
+    margin-bottom: var(--space-md);
+    line-height: var(--line-height-loose);
+}
+
+.legal__content ul,
+.legal__content ol {
+    margin-bottom: var(--space-md);
+    padding-left: var(--space-xl);
+}
+
+.legal__content li {
+    font-size: var(--font-size-base);
+    color: var(--color-text-secondary);
+    line-height: var(--line-height-loose);
+    margin-bottom: var(--space-sm);
+    position: relative;
+}
+
+.legal__content ul li {
+    list-style: none;
+}
+
+.legal__content ul li::before {
+    content: '';
+    position: absolute;
+    left: calc(-1 * var(--space-lg));
+    top: 10px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--color-accent-primary);
+}
+
+.legal__content ol li {
+    list-style: decimal;
+}
+
+.legal__content a {
+    color: var(--color-accent-primary);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.legal__content a:hover {
+    color: var(--color-accent-secondary);
+}
+
+.legal__content strong {
+    color: var(--color-text-primary);
+    font-weight: var(--font-weight-semibold);
+}
+
+/* Таблица содержания */
+.legal__toc {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    margin-bottom: var(--space-2xl);
+}
+
+.legal__toc-title {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--space-md);
+    color: var(--color-text-primary);
+}
+
+.legal__toc ol {
+    padding-left: var(--space-lg);
+}
+
+.legal__toc li {
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--space-sm);
+    color: var(--color-text-secondary);
+    list-style: decimal;
+}
+
+.legal__toc a {
+    color: var(--color-text-secondary);
+    transition: color var(--transition-fast);
+}
+
+.legal__toc a:hover {
+    color: var(--color-accent-primary);
+}
+
+@media (max-width: 768px) {
+    .legal {
+        padding-top: calc(var(--header-height) + var(--space-xl));
+    }
+
+    .legal__content h2 {
+        font-size: var(--font-size-lg);
+    }
+}

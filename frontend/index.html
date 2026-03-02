@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FenixUz — Fast and Secure Messenger</title>
+  <meta name="description" content="FenixUz — a modern messenger with end-to-end encryption, group chats, channels and HD calls. Download for free.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+  <!-- CSS (порядок: tokens → reset → base → layout → components → animations → page) -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <!-- Лого -->
+      <a href="index.html" class="header__logo">
+        <div class="header__logo-icon"><img src="images/logo.png" width="30" height="30" alt="FenixUz"></div>
+        <span>FenixUz</span>
+      </a>
+
+      <!-- Навигация -->
+      <nav class="nav" id="nav">
+        <a href="#features" class="nav__link" data-i18n="nav.features">Возможности</a>
+        <a href="#security" class="nav__link" data-i18n="nav.security">Безопасность</a>
+        <a href="#download" class="nav__link" data-i18n="nav.download">Скачать</a>
+        <a href="privacy.html" class="nav__link" data-i18n="nav.privacy">Конфиденциальность</a>
+        <a href="terms.html" class="nav__link" data-i18n="nav.terms">Соглашение</a>
+
+        <!-- Переключатель языка -->
+        <div class="lang-switcher">
+          <button class="lang-switcher__btn" aria-label="Change language">🇬🇧 EN</button>
+          <div class="lang-switcher__dropdown"></div>
+        </div>
+      </nav>
+
+      <!-- Burger (мобильный) -->
+      <button class="header__burger" id="burger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="hero">
+    <!-- Фоновые свечения -->
+    <div class="hero__glow hero__glow--1 animate-float--slow"></div>
+    <div class="hero__glow hero__glow--2 animate-float"></div>
+    <div class="hero__glow hero__glow--3"></div>
+
+    <div class="container hero__inner">
+      <!-- Текстовый блок -->
+      <div class="hero__content">
+        <div class="section-badge hero__badge animate-on-scroll" data-i18n="hero.badge">🚀 New Messenger</div>
+        <h1 class="hero__title animate-on-scroll animate-delay-1">
+          <span data-i18n="hero.title_1">Communicate</span><br>
+          <span class="text-gradient" data-i18n="hero.title_2">without limits</span>
+        </h1>
+        <p class="hero__subtitle animate-on-scroll animate-delay-2" data-i18n="hero.subtitle">
+          FenixUz — a fast, secure, and modern messenger with end-to-end encryption. Your conversations are fully protected.
+        </p>
+        <div class="hero__actions animate-on-scroll animate-delay-3">
+          <a href="#download" class="btn btn--primary" data-i18n="hero.btn_primary">Download Free</a>
+          <a href="#features" class="btn btn--outline" data-i18n="hero.btn_secondary">Learn More</a>
+        </div>
+      </div>
+
+      <!-- Мокап телефона -->
+      <div class="hero__visual animate-scale">
+        <div class="hero__mockup animate-float--slow animate-pulse-glow">
+          <div class="hero__mockup-screen">
+            <!-- Мини-header чата -->
+            <div class="mockup-header">
+              <div class="mockup-avatar"></div>
+              <div>
+                <div class="mockup-name" data-i18n="mockup.name">Алексей Иванов</div>
+                <div class="mockup-status" data-i18n="mockup.status">онлайн</div>
+              </div>
+            </div>
+            <!-- Сообщения -->
+            <div class="mockup-messages">
+              <div class="mockup-msg mockup-msg--in" data-i18n="mockup.msg_1">Привет! Как дела?</div>
+              <div class="mockup-msg mockup-msg--out" data-i18n="mockup.msg_2">Привет! Всё отлично, спасибо! 😊</div>
+              <div class="mockup-msg mockup-msg--in" data-i18n="mockup.msg_3">Посмотри, какие стикеры добавили 🎉</div>
+            </div>
+            <!-- Поле ввода -->
+            <div class="mockup-input">
+              <div class="mockup-input__field" data-i18n-placeholder="mockup.input_placeholder"></div>
+              <div class="mockup-input__send">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M22 2L11 13" stroke="white" stroke-width="2" stroke-linecap="round"/><path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FEATURES ==================== -->
+  <section class="section features" id="features">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <div class="section-badge" data-i18n="features.badge">Features</div>
+        <h2 class="section-title" data-i18n="features.title">Everything you need to communicate</h2>
+        <p class="section-description" data-i18n="features.description">
+          FenixUz combines all essential features in one fast and convenient app
+        </p>
+      </div>
+      <!-- Динамический контент из JSON -->
+      <div class="grid grid--3" id="features-grid"></div>
+    </div>
+  </section>
+
+  <!-- ==================== SECURITY ==================== -->
+  <section class="section security" id="security">
+    <div class="container">
+      <div class="security__inner">
+        <!-- Визуал -->
+        <div class="security__visual animate-scale">
+          <div class="security__shield">
+            <div class="security__shield-icon animate-float--slow">🛡️</div>
+          </div>
+        </div>
+        <!-- Контент -->
+        <div>
+          <div class="section-badge animate-on-scroll" data-i18n="security.badge">Security</div>
+          <h2 class="section-title animate-on-scroll animate-delay-1" data-i18n="security.title">Your data is protected</h2>
+          <p class="animate-on-scroll animate-delay-2" data-i18n="security.description">
+            We don't sell your data. Your privacy is our priority.
+          </p>
+          <!-- Динамический список -->
+          <div class="security__list" id="security-list"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== DOWNLOAD ==================== -->
+  <section class="section download" id="download">
+    <div class="download__glow"></div>
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <div class="section-badge" data-i18n="download.badge">Download</div>
+        <h2 class="section-title" data-i18n="download.title">Start chatting right now</h2>
+        <p class="section-description" data-i18n="download.description">
+          FenixUz is available on all platforms. You'll be able to download the app soon.
+        </p>
+      </div>
+
+      <div class="download__actions animate-on-scroll animate-delay-1">
+        <!-- App Store -->
+        <button class="btn btn--store" disabled>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.1 22C7.79 22.05 6.8 20.68 5.96 19.47C4.25 16.97 2.94 12.45 4.7 9.39C5.57 7.87 7.13 6.91 8.82 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/></svg>
+          <div>
+            <span class="btn__label-small" data-i18n="download.coming_soon">Скоро</span>
+            <span class="btn__label-big" data-i18n="download.app_store">App Store</span>
+          </div>
+        </button>
+
+        <!-- Google Play -->
+        <button class="btn btn--store" disabled>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 20.5V3.5C3 2.91 3.34 2.39 3.84 2.15L13.69 12L3.84 21.85C3.34 21.61 3 21.09 3 20.5ZM16.81 15.12L6.05 21.34L14.54 12.85L16.81 15.12ZM20.16 10.81C20.5 11.08 20.75 11.5 20.75 12C20.75 12.5 20.53 12.9 20.18 13.18L17.89 14.5L15.39 12L17.89 9.5L20.16 10.81ZM6.05 2.66L16.81 8.88L14.54 11.15L6.05 2.66Z"/></svg>
+          <div>
+            <span class="btn__label-small" data-i18n="download.coming_soon">Скоро</span>
+            <span class="btn__label-big" data-i18n="download.google_play">Google Play</span>
+          </div>
+        </button>
+      </div>
+
+      <!-- Статистика -->
+      <div class="stats animate-on-scroll animate-delay-2">
+        <div class="stat">
+          <div class="stat__number" data-i18n="stats.users">1M+</div>
+          <div class="stat__label" data-i18n="stats.users_label">Пользователей</div>
+        </div>
+        <div class="stat">
+          <div class="stat__number" data-i18n="stats.messages">500M+</div>
+          <div class="stat__label" data-i18n="stats.messages_label">Сообщений в день</div>
+        </div>
+        <div class="stat">
+          <div class="stat__number" data-i18n="stats.countries">50+</div>
+          <div class="stat__label" data-i18n="stats.countries_label">Стран</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <!-- Бренд -->
+        <div>
+          <a href="index.html" class="header__logo">
+            <div class="header__logo-icon"><img src="images/logo.png" width="30" height="30" alt="FenixUz"></div>
+            <span>FenixUz</span>
+          </a>
+          <p class="footer__brand-text" data-i18n="footer.brand_text">
+            FenixUz — a fast, secure, and modern messenger for everyone.
+          </p>
+        </div>
+
+        <!-- Продукт -->
+        <div>
+          <h4 class="footer__heading" data-i18n="footer.product">Продукт</h4>
+          <a href="#features" class="footer__link" data-i18n="footer.features_link">Возможности</a>
+          <a href="#security" class="footer__link" data-i18n="footer.security_link">Безопасность</a>
+          <a href="#download" class="footer__link" data-i18n="footer.download_link">Скачать</a>
+        </div>
+
+        <!-- Документы -->
+        <div>
+          <h4 class="footer__heading" data-i18n="footer.legal">Документы</h4>
+          <a href="privacy.html" class="footer__link" data-i18n="footer.privacy_link">Конфиденциальность</a>
+          <a href="terms.html" class="footer__link" data-i18n="footer.terms_link">Пользовательское соглашение</a>
+        </div>
+
+        <!-- Соцсети -->
+        <div>
+          <h4 class="footer__heading" data-i18n="footer.social">Соцсети</h4>
+          <a href="#" class="footer__link">Telegram</a>
+          <a href="#" class="footer__link">Instagram</a>
+          <a href="#" class="footer__link">Twitter</a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span data-i18n="footer.copyright">© 2026 FenixUz. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
