@@ -5,12 +5,12 @@
 
 :root {
   /* ---- Цветовая палитра (Тёмная тема) ---- */
-  --color-bg-primary: #0a0a1a;
-  --color-bg-secondary: #0a0a1a;
-  --color-bg-tertiary: #0f1020;
+  --color-bg-primary: #061a11;
+  --color-bg-secondary: #061a11;
+  --color-bg-tertiary: #082418;
   --color-bg-card: rgba(255, 255, 255, 0.04);
   --color-bg-card-hover: rgba(255, 255, 255, 0.08);
-  --color-bg-glass: rgba(10, 10, 26, 0.85);
+  --color-bg-glass: rgba(6, 26, 17, 0.85);
 
   /* Акцентные цвета */
   --color-accent-primary: #10b981;
@@ -20,7 +20,7 @@
 
   /* Градиенты */
   --gradient-primary: linear-gradient(135deg, #10b981 0%, #34d399 100%);
-  --gradient-hero: linear-gradient(160deg, #0a0a1a 0%, #0d0d22 40%, #0a0a1a 100%);
+  --gradient-hero: linear-gradient(160deg, #061a11 0%, #082418 40%, #061a11 100%);
   --gradient-card: linear-gradient(145deg, rgba(16, 185, 129, 0.08) 0%, rgba(52, 211, 153, 0.04) 100%);
   --gradient-text: linear-gradient(135deg, #10b981, #34d399, #6ee7b7);
   --gradient-glow: radial-gradient(circle at 50% 50%, rgba(16, 185, 129, 0.15), transparent 70%);
