@@ -21,7 +21,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('../images/schreen.jpg') center / cover no-repeat;
+    background: url('../images/new_screen.jpg') center / cover no-repeat;
     opacity: 0.15;
     z-index: 0;
     pointer-events: none;
@@ -104,7 +104,7 @@
     position: relative;
     width: 300px;
     height: 600px;
-    background: linear-gradient(180deg, #0a2818 0%, #0a1f14 100%);
+    background: linear-gradient(180deg, #0d0d22 0%, #0a0a1a 100%);
     border-radius: 40px;
     border: 2px solid rgba(255, 255, 255, 0.1);
     box-shadow:
