@@ -42,7 +42,7 @@ a:hover {
 
 /* ---- Выделение текста ---- */
 ::selection {
-    background-color: rgba(124, 92, 252, 0.3);
+    background-color: rgba(16, 185, 129, 0.3);
     color: var(--color-text-primary);
 }
 
@@ -78,8 +78,8 @@ a:hover {
     align-items: center;
     gap: var(--space-sm);
     padding: var(--space-xs) var(--space-md);
-    background: rgba(124, 92, 252, 0.1);
-    border: 1px solid rgba(124, 92, 252, 0.2);
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.2);
     border-radius: var(--radius-full);
     font-size: var(--font-size-sm);
     font-weight: var(--font-weight-medium);
