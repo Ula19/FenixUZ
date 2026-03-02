@@ -1,0 +1,17 @@
+# Ignore everything
+*
+
+# Except frontend folder
+!frontend/
+!frontend/**
+
+# And docs
+!README.md
+!CHANGELOG.md
+!PROJECT_HISTORY.md
+!.gitignore
+
+# Always ignore
+.DS_Store
+frontend/.DS_Store
+frontend/images/.DS_Store
