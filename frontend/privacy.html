@@ -36,7 +36,6 @@
 
             <nav class="nav" id="nav">
                 <a href="index.html#features" class="nav__link" data-i18n="nav.features">Features</a>
-                <a href="index.html#faq" class="nav__link" data-i18n="nav.faq">FAQ</a>
                 <a href="terms.html" class="nav__link" data-i18n="nav.terms">Terms</a>
                 <a href="privacy.html" class="nav__link nav__link--active" data-i18n="nav.privacy">Privacy</a>
 
@@ -58,12 +57,12 @@
     <!-- Контент загружается динамически из JSON-переводов (i18n) -->
     <main class="legal">
         <div class="container">
-            <div class="legal__header animate-on-scroll">
+            <div class="legal__header">
                 <h1 id="privacy-title"></h1>
                 <p class="legal__date" id="privacy-date"></p>
             </div>
 
-            <div class="legal__content animate-on-scroll animate-delay-1">
+            <div class="legal__content">
                 <!-- Вводный текст (intro) -->
                 <div id="privacy-intro"></div>
                 <!-- Секции с контентом -->
@@ -88,25 +87,25 @@
                     </p>
                 </div>
                 <div>
-                    <h4 class="footer__heading">Product</h4>
-                    <a href="index.html#features" class="footer__link">Features</a>
-                    <a href="index.html#faq" class="footer__link">FAQ</a>
-                    <a href="index.html#download" class="footer__link">Download</a>
+                    <h4 class="footer__heading" data-i18n="footer.product">Product</h4>
+                    <a href="index.html#features" class="footer__link" data-i18n="footer.features_link">Features</a>
+                    <a href="index.html#security" class="footer__link" data-i18n="footer.security_link">Security</a>
+                    <a href="index.html#download" class="footer__link" data-i18n="footer.download_link">Download</a>
                 </div>
                 <div>
-                    <h4 class="footer__heading">Legal</h4>
-                    <a href="terms.html" class="footer__link">Terms</a>
-                    <a href="privacy.html" class="footer__link">Privacy</a>
+                    <h4 class="footer__heading" data-i18n="footer.legal">Legal</h4>
+                    <a href="privacy.html" class="footer__link" data-i18n="footer.privacy_link">Privacy</a>
+                    <a href="terms.html" class="footer__link" data-i18n="footer.terms_link">Terms</a>
                 </div>
                 <div>
-                    <h4 class="footer__heading">Social Media</h4>
+                    <h4 class="footer__heading" data-i18n="footer.social">Social</h4>
                     <a href="#" class="footer__link">Telegram</a>
+                    <a href="#" class="footer__link">Instagram</a>
                     <a href="#" class="footer__link">Twitter</a>
-                    <a href="#" class="footer__link">GitHub</a>
                 </div>
             </div>
             <div class="footer__bottom">
-                <span>© 2024 FenixUz MCHJ. All rights reserved.</span>
+                <span data-i18n="footer.copyright">© 2026 FenixUz. All rights reserved.</span>
             </div>
         </div>
     </footer>
