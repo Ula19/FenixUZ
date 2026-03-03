@@ -405,7 +405,7 @@
 
     .nav {
         position: fixed;
-        top: 0;
+        top: var(--header-height);
         left: 0;
         right: 0;
         bottom: 0;
@@ -415,14 +415,13 @@
         gap: var(--space-2xl);
         background: #061a11;
         z-index: 9998;
-        clip-path: inset(0 0 100% 0);
         visibility: hidden;
-        transition: clip-path 0.3s ease, visibility 0.3s ease;
+        pointer-events: none;
     }
 
     .nav--open {
-        clip-path: inset(0 0 0 0);
         visibility: visible;
+        pointer-events: auto;
     }
 
     .nav__link {
