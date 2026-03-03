@@ -38,20 +38,47 @@ const Header = (() => {
     function setupMobileMenu() {
         if (!burger || !nav) return;
 
+        const navParent = nav.parentElement;
+        const navNextSibling = nav.nextElementSibling;
+
         burger.addEventListener('click', () => {
-            burger.classList.toggle('header__burger--active');
-            nav.classList.toggle('nav--open');
-            header.classList.toggle('header--menu-open');
-            document.body.style.overflow = nav.classList.contains('nav--open') ? 'hidden' : '';
+            const isOpen = nav.classList.contains('nav--open');
+
+            if (!isOpen) {
+                // Открытие: переносим nav в body
+                document.body.appendChild(nav);
+                // Принудительный reflow
+                nav.offsetHeight;
+                nav.classList.add('nav--open');
+                burger.classList.add('header__burger--active');
+                header.classList.add('header--menu-open');
+                document.body.style.overflow = 'hidden';
+            } else {
+                // Закрытие: возвращаем nav обратно в header
+                nav.classList.remove('nav--open');
+                burger.classList.remove('header__burger--active');
+                header.classList.remove('header--menu-open');
+                document.body.style.overflow = '';
+                if (navNextSibling) {
+                    navParent.insertBefore(nav, navNextSibling);
+                } else {
+                    navParent.appendChild(nav);
+                }
+            }
         });
 
         // Закрытие меню при клике на ссылку
         nav.querySelectorAll('.nav__link').forEach(link => {
             link.addEventListener('click', () => {
-                burger.classList.remove('header__burger--active');
                 nav.classList.remove('nav--open');
+                burger.classList.remove('header__burger--active');
                 header.classList.remove('header--menu-open');
                 document.body.style.overflow = '';
+                if (navNextSibling) {
+                    navParent.insertBefore(nav, navNextSibling);
+                } else {
+                    navParent.appendChild(nav);
+                }
             });
         });
     }
