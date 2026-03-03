@@ -38,8 +38,8 @@ FenixUz is a messenger built on the Telegram API with unique privacy and product
 
 ```bash
 # Clone the repo
-git clone https://github.com/<username>/fenixuz.git
-cd fenixuz
+git clone https://github.com/Ula19/FenixUZ
+cd FenixUZ
 
 # Start local server
 cd frontend
