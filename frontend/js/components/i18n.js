@@ -7,10 +7,16 @@ const I18n = (() => {
   const DEFAULT_LANG = 'en';
   const SUPPORTED_LANGS = ['ru', 'uz', 'en'];
 
+  const FLAG_SVG = {
+    ru: '<svg width="20" height="14" viewBox="0 0 20 14" style="vertical-align:middle"><rect width="20" height="4.67" fill="#fff"/><rect y="4.67" width="20" height="4.67" fill="#0039A6"/><rect y="9.33" width="20" height="4.67" fill="#D52B1E"/></svg>',
+    uz: '<svg width="20" height="14" viewBox="0 0 20 14" style="vertical-align:middle"><rect width="20" height="4.67" fill="#1EB53A"/><rect y="4.4" width="20" height="1.4" fill="#CE1126"/><rect y="4.67" width="20" height="0.93" fill="#fff"/><rect y="5.6" width="20" height="0.93" fill="#fff"/><rect y="4.67" width="20" height="4.67" fill="#0099B5"/><rect y="9.33" width="20" height="4.67" fill="#1EB53A"/></svg>',
+    en: '<svg width="20" height="14" viewBox="0 0 20 14" style="vertical-align:middle"><rect width="20" height="14" fill="#012169"/><path d="M0,0 L20,14 M20,0 L0,14" stroke="#fff" stroke-width="2.5"/><path d="M0,0 L20,14 M20,0 L0,14" stroke="#C8102E" stroke-width="1.5"/><path d="M10,0 V14 M0,7 H20" stroke="#fff" stroke-width="4"/><path d="M10,0 V14 M0,7 H20" stroke="#C8102E" stroke-width="2.5"/></svg>'
+  };
+
   const LANG_LABELS = {
-    ru: { flag: '🇷🇺', name: 'Русский', short: 'RU' },
-    uz: { flag: '🇺🇿', name: "O'zbek", short: 'UZ' },
-    en: { flag: '🇬🇧', name: 'English', short: 'EN' }
+    ru: { flag: FLAG_SVG.ru, name: 'Русский', short: 'RU' },
+    uz: { flag: FLAG_SVG.uz, name: "O'zbek", short: 'UZ' },
+    en: { flag: FLAG_SVG.en, name: 'English', short: 'EN' }
   };
 
   let currentLang = DEFAULT_LANG;
