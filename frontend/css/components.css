@@ -407,13 +407,16 @@
         align-items: center;
         justify-content: center;
         gap: var(--space-2xl);
-        background: var(--color-bg-primary);
+        background: #061a11;
+        z-index: 999;
+        transform: translateY(-100%);
         opacity: 0;
         visibility: hidden;
-        transition: all var(--transition-base);
+        transition: all 0.3s ease;
     }
 
     .nav--open {
+        transform: translateY(0);
         opacity: 1;
         visibility: visible;
     }
