@@ -411,13 +411,16 @@
         bottom: 0;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
+        padding-top: 15vh;
+        padding-bottom: var(--space-2xl);
         gap: var(--space-xl);
         background: #061a11;
         z-index: 9998;
         visibility: hidden;
         pointer-events: none;
         overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
     }
 
     .nav--open {
@@ -427,6 +430,12 @@
 
     .nav__link {
         font-size: var(--font-size-xl);
+    }
+
+    /* Язык: дропдаун вверх в мобильном меню */
+    .lang-switcher__dropdown {
+        top: auto;
+        bottom: calc(100% + var(--space-xs));
     }
 
     .footer__grid {
