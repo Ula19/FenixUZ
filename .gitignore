@@ -6,7 +6,7 @@
 !frontend/**
 
 # And essentials
-!.gitignore
+.gitignore
 !README.md
 
 # Always ignore
