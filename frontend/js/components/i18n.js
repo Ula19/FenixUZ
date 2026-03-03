@@ -9,7 +9,7 @@ const I18n = (() => {
 
   const FLAG_SVG = {
     ru: '<svg width="20" height="14" viewBox="0 0 20 14" style="vertical-align:middle"><rect width="20" height="4.67" fill="#fff"/><rect y="4.67" width="20" height="4.67" fill="#0039A6"/><rect y="9.33" width="20" height="4.67" fill="#D52B1E"/></svg>',
-    uz: '<svg width="20" height="14" viewBox="0 0 20 14" style="vertical-align:middle"><rect width="20" height="4.67" fill="#1EB53A"/><rect y="4.4" width="20" height="1.4" fill="#CE1126"/><rect y="4.67" width="20" height="0.93" fill="#fff"/><rect y="5.6" width="20" height="0.93" fill="#fff"/><rect y="4.67" width="20" height="4.67" fill="#0099B5"/><rect y="9.33" width="20" height="4.67" fill="#1EB53A"/></svg>',
+    uz: '<svg width="20" height="14" viewBox="0 0 20 14" style="vertical-align:middle"><rect width="20" height="14" fill="#1EB53A"/><rect width="20" height="5" fill="#0099B5"/><rect y="4.5" width="20" height="1" fill="#CE1126"/><rect y="5" width="20" height="4" fill="#fff"/><rect y="8.5" width="20" height="1" fill="#CE1126"/><circle cx="4.5" cy="2.5" r="1.5" fill="#fff"/><circle cx="5.2" cy="2.5" r="1.2" fill="#0099B5"/></svg>',
     en: '<svg width="20" height="14" viewBox="0 0 20 14" style="vertical-align:middle"><rect width="20" height="14" fill="#012169"/><path d="M0,0 L20,14 M20,0 L0,14" stroke="#fff" stroke-width="2.5"/><path d="M0,0 L20,14 M20,0 L0,14" stroke="#C8102E" stroke-width="1.5"/><path d="M10,0 V14 M0,7 H20" stroke="#fff" stroke-width="4"/><path d="M10,0 V14 M0,7 H20" stroke="#C8102E" stroke-width="2.5"/></svg>'
   };
 
