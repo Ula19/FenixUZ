@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🔥 FenixUz
+# 🔥FenixUz <img src="frontend/images/logo.png" alt="FenixUz" width="30" />
 
 **Fast, Secure & Modern Messenger**
 
