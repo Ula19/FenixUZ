@@ -5,8 +5,9 @@
 !frontend/
 !frontend/**
 
-# And .gitignore itself
+# And essentials
 !.gitignore
+!README.md
 
 # Always ignore
 .DS_Store
