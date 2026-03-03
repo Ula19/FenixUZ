@@ -5,10 +5,7 @@
 !frontend/
 !frontend/**
 
-# And docs
-!README.md
-!CHANGELOG.md
-!PROJECT_HISTORY.md
+# And .gitignore itself
 !.gitignore
 
 # Always ignore
