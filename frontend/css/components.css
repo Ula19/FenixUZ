@@ -399,11 +399,13 @@
 @media (max-width: 768px) {
     .header__burger {
         display: flex;
+        position: relative;
+        z-index: 9999;
     }
 
     .nav {
         position: fixed;
-        top: var(--header-height);
+        top: 0;
         left: 0;
         right: 0;
         bottom: 0;
@@ -412,14 +414,14 @@
         justify-content: center;
         gap: var(--space-2xl);
         background: #061a11;
-        z-index: 999;
-        transform: translateY(-100%);
+        z-index: 9998;
+        clip-path: inset(0 0 100% 0);
         visibility: hidden;
-        transition: transform 0.3s ease, visibility 0.3s ease;
+        transition: clip-path 0.3s ease, visibility 0.3s ease;
     }
 
     .nav--open {
-        transform: translateY(0);
+        clip-path: inset(0 0 0 0);
         visibility: visible;
     }
 
