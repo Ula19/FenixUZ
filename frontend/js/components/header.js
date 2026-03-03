@@ -41,6 +41,7 @@ const Header = (() => {
         burger.addEventListener('click', () => {
             burger.classList.toggle('header__burger--active');
             nav.classList.toggle('nav--open');
+            header.classList.toggle('header--menu-open');
             document.body.style.overflow = nav.classList.contains('nav--open') ? 'hidden' : '';
         });
 
@@ -49,6 +50,7 @@ const Header = (() => {
             link.addEventListener('click', () => {
                 burger.classList.remove('header__burger--active');
                 nav.classList.remove('nav--open');
+                header.classList.remove('header--menu-open');
                 document.body.style.overflow = '';
             });
         });
