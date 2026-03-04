@@ -395,6 +395,22 @@
     color: var(--color-text-muted);
 }
 
+/* reCAPTCHA badge hidden (attribution in footer per Google TOS) */
+.grecaptcha-badge {
+    visibility: hidden !important;
+}
+
+.recaptcha-notice {
+    font-size: 11px;
+    color: var(--color-text-muted);
+    opacity: 0.6;
+}
+
+.recaptcha-notice a {
+    color: var(--color-text-muted);
+    text-decoration: underline;
+}
+
 /* ========== RESPONSIVE: HEADER + FOOTER ========== */
 @media (max-width: 768px) {
     .header__burger {
