@@ -174,6 +174,7 @@
     "message": "Xabar",
     "send": "Yuborish",
     "success": "Xabar muvaffaqiyatli yuborildi!",
-    "error": "Xatolik yuz berdi. Qaytadan urinib ko'ring."
+    "error": "Xatolik yuz berdi. Qaytadan urinib ko'ring.",
+    "bot": "Xavfsizlik tekshiruvi muvaffaqiyatsiz bo'ldi. Qaytadan urinib ko'ring."
   }
 }

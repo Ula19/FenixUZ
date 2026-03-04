@@ -46,6 +46,9 @@ const ContactForm = (() => {
                 msg.textContent = '✅ ' + (window.__contactSuccess || 'Message sent successfully!');
                 msg.className = 'contact-msg contact-msg--success';
                 form.reset();
+            } else if (res.status === 403) {
+                msg.textContent = '🤖 ' + (window.__contactBot || 'Security check failed. Please try again.');
+                msg.className = 'contact-msg contact-msg--error';
             } else {
                 throw new Error();
             }

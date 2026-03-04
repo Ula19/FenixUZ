@@ -174,6 +174,7 @@
     "message": "Message",
     "send": "Send",
     "success": "Message sent successfully!",
-    "error": "Something went wrong. Try again."
+    "error": "Something went wrong. Try again.",
+    "bot": "Security check failed. Please try again."
   }
 }
