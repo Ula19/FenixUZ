@@ -1,0 +1,25 @@
+# Ignore everything
+*
+
+# Except frontend folder
+!frontend/
+!frontend/**
+
+# Except backend folder
+!backend/
+!backend/**
+
+# And essentials
+!.gitignore
+!README.md
+!CHANGELOG.md
+!PROJECT_HISTORY.md
+!DEPLOY.md
+
+# Always ignore
+.DS_Store
+frontend/.DS_Store
+frontend/images/.DS_Store
+backend/.env
+backend/__pycache__/
+backend/**/__pycache__/
