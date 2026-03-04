@@ -7,6 +7,7 @@ class ContactCreate(BaseModel):
     name: str
     email: EmailStr
     message: str
+    captcha_token: str
 
 
 # --- Ответ API ---

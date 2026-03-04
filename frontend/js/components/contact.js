@@ -1,6 +1,8 @@
 /* ==========================================================================
-   Contact Form — Отправка обращения
+   Contact Form — Отправка обращения с reCAPTCHA v3
    ========================================================================== */
+
+const RECAPTCHA_SITE_KEY = '6LfdP38sAAAAAL-3cz_lGnJpz9PSDiuQXIX5FdqW';
 
 const ContactForm = (() => {
     // Локально — бэкенд на порту 8001, на сервере — Nginx проксирует /api/
@@ -31,10 +33,13 @@ const ContactForm = (() => {
         btn.textContent = '...';
 
         try {
+            // Получаем токен reCAPTCHA v3
+            const captcha_token = await grecaptcha.execute(RECAPTCHA_SITE_KEY, { action: 'contact' });
+
             const res = await fetch(API_URL, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ name, email, message })
+                body: JSON.stringify({ name, email, message, captcha_token })
             });
 
             if (res.ok) {
