@@ -5,6 +5,7 @@
 import I18n from './components/i18n.js';
 import Header from './components/header.js';
 import Animations from './components/animations.js';
+import ContactForm from './components/contact.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
   // 1. Интернационализация (должна загрузиться первой)
@@ -16,6 +17,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   // 3. Компоненты
   Header.init();
   Animations.init();
+  ContactForm.init();
 
   // 4. При смене языка — перерисовать динамический контент
   I18n.onChange(() => {
