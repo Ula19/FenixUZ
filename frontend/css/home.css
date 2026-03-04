@@ -410,3 +410,101 @@
         grid-template-columns: 1fr;
     }
 }
+
+/* ========== CONTACT FORM ========== */
+.contact {
+    background: var(--color-bg-secondary);
+}
+
+.contact-form {
+    max-width: 640px;
+    margin: var(--space-2xl) auto 0;
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    padding: var(--space-2xl);
+}
+
+.contact-form__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-lg);
+}
+
+.form-field {
+    position: relative;
+    margin-bottom: var(--space-lg);
+}
+
+.form-field input,
+.form-field textarea {
+    width: 100%;
+    padding: 16px;
+    padding-top: 24px;
+    background: var(--color-bg-primary);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    color: var(--color-text-primary);
+    font-size: var(--font-size-base);
+    font-family: inherit;
+    outline: none;
+    transition: border-color var(--transition-fast);
+    resize: vertical;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+    border-color: var(--color-accent-primary);
+}
+
+.form-field label {
+    position: absolute;
+    left: 16px;
+    top: 20px;
+    color: var(--color-text-muted);
+    font-size: var(--font-size-base);
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+
+.form-field input:focus~label,
+.form-field input:not(:placeholder-shown)~label,
+.form-field textarea:focus~label,
+.form-field textarea:not(:placeholder-shown)~label {
+    top: 6px;
+    font-size: 11px;
+    color: var(--color-accent-primary);
+}
+
+.contact-form__btn {
+    width: 100%;
+    margin-top: var(--space-sm);
+}
+
+.contact-msg {
+    text-align: center;
+    margin-top: var(--space-md);
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-md);
+    font-size: var(--font-size-sm);
+}
+
+.contact-msg--success {
+    background: rgba(16, 185, 129, 0.15);
+    color: #10b981;
+}
+
+.contact-msg--error {
+    background: rgba(239, 68, 68, 0.15);
+    color: #ef4444;
+}
+
+@media (max-width: 768px) {
+    .contact-form__row {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form {
+        padding: var(--space-xl);
+    }
+}

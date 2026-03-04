@@ -44,6 +44,7 @@
         <a href="#features" class="nav__link" data-i18n="nav.features">Возможности</a>
         <a href="#security" class="nav__link" data-i18n="nav.security">Безопасность</a>
         <a href="#download" class="nav__link" data-i18n="nav.download">Скачать</a>
+        <a href="#contact" class="nav__link" data-i18n="nav.contact">Контакты</a>
         <a href="privacy.html" class="nav__link" data-i18n="nav.privacy">Конфиденциальность</a>
         <a href="terms.html" class="nav__link" data-i18n="nav.terms">Соглашение</a>
 
@@ -216,6 +217,34 @@
           <div class="stat__label" data-i18n="stats.countries_label">Стран</div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2 class="section__title animate-on-scroll" data-i18n="contact.title">Свяжитесь с нами</h2>
+      <p class="section__subtitle animate-on-scroll" data-i18n="contact.subtitle">Есть вопрос или предложение? Напишите
+        нам!</p>
+
+      <form id="contactForm" class="contact-form animate-on-scroll">
+        <div class="contact-form__row">
+          <div class="form-field">
+            <input type="text" id="contactName" required placeholder=" ">
+            <label data-i18n="contact.name">Имя</label>
+          </div>
+          <div class="form-field">
+            <input type="email" id="contactEmail" required placeholder=" ">
+            <label data-i18n="contact.email">Email</label>
+          </div>
+        </div>
+        <div class="form-field">
+          <textarea id="contactText" rows="4" required placeholder=" "></textarea>
+          <label data-i18n="contact.message">Сообщение</label>
+        </div>
+        <button type="submit" class="btn btn--primary contact-form__btn" data-i18n="contact.send">Отправить</button>
+        <div id="contactMessage" class="contact-msg" style="display:none"></div>
+      </form>
     </div>
   </section>
 
