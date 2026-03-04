@@ -6,6 +6,7 @@ from fastapi.responses import FileResponse
 from database import init_db
 from routes.contacts import router as contacts_router
 from routes.admin import router as admin_router
+from config import RECAPTCHA_SITE_KEY
 
 
 @asynccontextmanager
@@ -40,3 +41,8 @@ async def admin_page():
 @app.get("/api/health")
 async def health():
     return {"status": "ok"}
+
+
+@app.get("/api/recaptcha-key")
+async def recaptcha_key():
+    return {"site_key": RECAPTCHA_SITE_KEY}
