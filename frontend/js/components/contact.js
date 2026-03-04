@@ -3,6 +3,11 @@
    ========================================================================== */
 
 const ContactForm = (() => {
+    // Локально — бэкенд на порту 8001, на сервере — Nginx проксирует /api/
+    const API_URL = location.hostname === 'localhost' || location.hostname === '127.0.0.1'
+        ? 'http://localhost:8001/api/contacts/'
+        : '/api/contacts/';
+
     function init() {
         const form = document.getElementById('contactForm');
         if (!form) return;
@@ -26,7 +31,7 @@ const ContactForm = (() => {
         btn.textContent = '...';
 
         try {
-            const res = await fetch('/api/contacts/', {
+            const res = await fetch(API_URL, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ name, email, message })
