@@ -176,5 +176,12 @@
     "success": "Message sent successfully!",
     "error": "Something went wrong. Try again.",
     "bot": "Security check failed. Please try again."
+  },
+  "support": {
+    "title": "24/7 Support",
+    "subtitle": "We're always in touch — choose a convenient way",
+    "telegram": "Telegram",
+    "whatsapp": "WhatsApp",
+    "email": "Email"
   }
 }

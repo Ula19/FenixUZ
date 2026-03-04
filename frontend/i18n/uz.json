@@ -176,5 +176,12 @@
     "success": "Xabar muvaffaqiyatli yuborildi!",
     "error": "Xatolik yuz berdi. Qaytadan urinib ko'ring.",
     "bot": "Xavfsizlik tekshiruvi muvaffaqiyatsiz bo'ldi. Qaytadan urinib ko'ring."
+  },
+  "support": {
+    "title": "24/7 Qo'llab-quvvatlash",
+    "subtitle": "Biz doimo aloqadamiz — qulay usulni tanlang",
+    "telegram": "Telegram",
+    "whatsapp": "WhatsApp",
+    "email": "Email"
   }
 }
