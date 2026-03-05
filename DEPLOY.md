@@ -141,3 +141,21 @@ sudo tail -20 /var/log/nginx/fenixuz.uz.error.log
 - **DNS:** `A` запись `fenixuz.uz` → IP сервера
 - **DNS:** `A` запись `www.fenixuz.uz` → IP сервера
 - **Файрвол:** `sudo ufw allow 'Nginx Full'`
+
+---
+
+## 📌 TODO — Заменить заглушки на настоящие ссылки
+
+> Сейчас в проекте используются **заглушечные** ссылки поддержки.
+> Замени их на настоящие перед деплоем!
+
+| Что заменить | Сейчас (заглушка) | Заменить на |
+|---|---|---|
+| Telegram | `https://t.me/fenixuz_support` | `https://t.me/ВАШЕ_ИМЯ` |
+| WhatsApp | `https://wa.me/998901234567` | `https://wa.me/НОМЕР_БЕЗ_ПЛЮСА` |
+| Email | `support@fenixuz.uz` | `ваш@email.com` |
+
+**Файлы, где нужно заменить:**
+- `frontend/index.html` — секция Support
+- `frontend/privacy.html` — футер
+- `frontend/terms.html` — футер
