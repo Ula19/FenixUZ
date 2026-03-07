@@ -183,5 +183,17 @@
     "telegram": "Telegram",
     "whatsapp": "WhatsApp",
     "email": "Email"
+  },
+  "unique": {
+    "title": "Only in FenixUz",
+    "subtitle": "Features you won't find in any other messenger",
+    "todo_title": "Todo Messages",
+    "todo_desc": "Save and store important messages. Send them to the right person directly from your todo list, or set a timer — the message will be sent automatically at the scheduled time.",
+    "apk_title": "APK File Protection",
+    "apk_desc": "Enable protection mode — and potentially dangerous .apk files won't be displayed. Works in private chats, groups, and channels, keeping you safe from malicious applications.",
+    "ai_title": "AI Assistant",
+    "ai_desc": "Built-in AI chat right inside the messenger. Ask questions on any topic, get instant answers — without switching to another app.",
+    "block_title": "Foreign Number Blocking",
+    "block_desc": "Enable the filter — and only users with numbers from your country will be able to message you. Full protection from unwanted messages and spam from foreign numbers."
   }
 }

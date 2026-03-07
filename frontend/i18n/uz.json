@@ -183,5 +183,17 @@
     "telegram": "Telegram",
     "whatsapp": "WhatsApp",
     "email": "Email"
+  },
+  "unique": {
+    "title": "Faqat FenixUz'da",
+    "subtitle": "Boshqa hech bir messenjerda topilmaydigan funksiyalar",
+    "todo_title": "Todo-xabarlar",
+    "todo_desc": "Muhim xabarlarni yozing va saqlang. Ularni todo-ro'yxatdan to'g'ridan-to'g'ri kerakli odamga yuboring yoki taymer o'rnating — xabar belgilangan vaqtda avtomatik yuboriladi.",
+    "apk_title": ".apk fayllardan himoya",
+    "apk_desc": "Himoya rejimini yoqing — va potensial xavfli .apk fayllar ko'rinmaydi. Shaxsiy chatlar, guruhlar va kanallarda ishlaydi, sizni zararli ilovalardan himoya qiladi.",
+    "ai_title": "AI-yordamchi",
+    "ai_desc": "Messenjer ichida o'rnatilgan sun'iy intellekt chati. Har qanday mavzuda savol bering, tezkor javob oling — boshqa ilovaga o'tmasdan.",
+    "block_title": "Xorijiy raqamlarni bloklash",
+    "block_desc": "Filtrni yoqing — va sizga faqat o'z davlatingiz raqamlariga ega foydalanuvchilar yozishi mumkin. Xorijiy raqamlardan keladigan spam va istalmagan xabarlardan to'liq himoya."
   }
 }
