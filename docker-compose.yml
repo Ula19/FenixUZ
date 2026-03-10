@@ -1,0 +1,47 @@
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    ports:
+      - "8880:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    ports:
+      - "8881:8000"
+    environment:
+      - DATABASE_URL=postgresql+asyncpg://postgres:${POSTGRES_PASSWORD:-postgres}@postgres:5432/${POSTGRES_DB:-fenixuz}
+      - ADMIN_LOGIN=${ADMIN_LOGIN:-admin}
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD:-patronus}
+      - RECAPTCHA_SITE_KEY=${RECAPTCHA_SITE_KEY:-6LfdP38sAAAAAL-3cz_lGnJpz9PSDiuQXIX5FdqW}
+      - RECAPTCHA_SECRET_KEY=${RECAPTCHA_SECRET_KEY:-6LfdP38sAAAAABl-ZP8yjY5kAYPgqC8LOFojh8Fl}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: unless-stopped
+
+  postgres:
+    image: postgres:16-alpine
+    ports:
+      - "5433:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-postgres}
+      - POSTGRES_DB=${POSTGRES_DB:-fenixuz}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+volumes:
+  pgdata:
